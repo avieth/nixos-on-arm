@@ -41,7 +41,7 @@ with lib;
   users.users.root.initialHashedPassword = mkOverride 999 "";
 
   # shrink boot partition to 25MB
-  sdImage.bootSize = mkOverride 1100 25;
+  #sdImage.bootSize = mkOverride 1100 25;
 
   # disable Grub by default, since no boards use it
   boot.loader.grub.enable = mkDefault false;
